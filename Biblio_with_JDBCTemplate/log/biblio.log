@@ -1,0 +1,275 @@
+2023-02-21 23:10:08,775 DEBUG MySpringMVCDispatcherServletInitializer [AbstractContextLoaderInitializer.java:67] No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2023-02-21 23:10:08,907 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcher'
+2023-02-21 23:10:10,357 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.2.0.Final
+2023-02-21 23:10:11,090 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2181 ms
+2023-02-21 23:10:18,008 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-02-21 23:10:20,483 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 1
+2023-02-21 23:10:20,574 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=1, bookName='Матрица', bookAutor='k', bookDate=2222}
+2023-02-21 23:10:20,656 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:10:20,760 ERROR TemplateEngine [TemplateEngine.java:1141] [THYMELEAF][http-nio-8080-exec-5] Exception processing template "books/show": Error during execution of processor 'org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor' (template: "books/show" - line 24, col 39)
+org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor' (template: "books/show" - line 24, col 39)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1376)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1121)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'person' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:258)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 49 common frames omitted
+2023-02-21 23:13:20,893 DEBUG MySpringMVCDispatcherServletInitializer [AbstractContextLoaderInitializer.java:67] No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2023-02-21 23:13:21,014 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcher'
+2023-02-21 23:13:22,436 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.2.0.Final
+2023-02-21 23:13:23,169 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2153 ms
+2023-02-21 23:13:26,586 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-02-21 23:13:29,331 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 3
+2023-02-21 23:13:29,421 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=3, bookName='Книга о вкусной и здоровой пище', bookAutor='Люди', bookDate=1980}
+2023-02-21 23:13:29,500 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:13:29,603 ERROR TemplateEngine [TemplateEngine.java:1141] [THYMELEAF][http-nio-8080-exec-4] Exception processing template "books/show": Error during execution of processor 'org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor' (template: "books/show" - line 24, col 39)
+org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor' (template: "books/show" - line 24, col 39)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1376)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1121)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'person' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 49 common frames omitted
+2023-02-21 23:13:33,494 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:13:35,294 INFO  PersonDAO [PersonDAO.java:39] findPersonById 6
+2023-02-21 23:13:42,221 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-02-21 23:13:43,446 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 1
+2023-02-21 23:13:43,531 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=1, bookName='Матрица', bookAutor='k', bookDate=2222}
+2023-02-21 23:13:43,603 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:13:43,680 ERROR TemplateEngine [TemplateEngine.java:1141] [THYMELEAF][http-nio-8080-exec-9] Exception processing template "books/show": Error during execution of processor 'org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor' (template: "books/show" - line 24, col 39)
+org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor' (template: "books/show" - line 24, col 39)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1376)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1121)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'person' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 49 common frames omitted
+2023-02-21 23:15:31,187 DEBUG MySpringMVCDispatcherServletInitializer [AbstractContextLoaderInitializer.java:67] No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2023-02-21 23:15:31,314 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcher'
+2023-02-21 23:15:32,777 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.2.0.Final
+2023-02-21 23:15:33,516 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2200 ms
+2023-02-21 23:15:37,059 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-02-21 23:15:39,560 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 1
+2023-02-21 23:15:39,651 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=1, bookName='Матрица', bookAutor='k', bookDate=2222}
+2023-02-21 23:15:39,726 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:15:48,417 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 1
+2023-02-21 23:15:48,488 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=1, bookName='Матрица', bookAutor='k', bookDate=2222}
+2023-02-21 23:15:58,259 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-02-21 23:16:04,580 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:16:05,900 INFO  PersonDAO [PersonDAO.java:39] findPersonById 2
+2023-02-21 23:16:09,636 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:16:18,524 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-02-21 23:16:20,189 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 1
+2023-02-21 23:16:20,262 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=1, bookName='Матрица', bookAutor='k', bookDate=2222}
+2023-02-21 23:16:21,862 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 1
+2023-02-21 23:16:21,932 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=1, bookName='Матрица', bookAutor='k', bookDate=2222}
+2023-02-21 23:16:22,003 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-02-21 23:16:52,219 INFO  BookDAO [BookDAO.java:33] BookDAO.findBookById 1
+2023-02-21 23:16:52,299 INFO  BookDAO [BookDAO.java:36] BookDAO.findBookById 2 step returned Book{bookId=1, bookName='Матрица', bookAutor='k', bookDate=2222}
+2023-02-21 23:17:07,887 INFO  BookController [BookController.java:77] update step 1 Book{bookId=0, bookName='Матрица', bookAutor='Neo', bookDate=2003}
+2023-02-21 23:17:07,888 INFO  BookDAO [BookDAO.java:47] BookDAO.update Book{bookId=1, bookName='Матрица', bookAutor='Neo', bookDate=2003}
+2023-02-21 23:17:07,964 INFO  BookController [BookController.java:85] update step 4 Book{bookId=1, bookName='Матрица', bookAutor='Neo', bookDate=2003}
+2023-02-21 23:17:07,972 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-03-05 15:07:46,224 DEBUG MySpringMVCDispatcherServletInitializer [AbstractContextLoaderInitializer.java:67] No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2023-03-05 15:07:46,361 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcher'
+2023-03-05 15:07:47,878 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.2.0.Final
+2023-03-05 15:07:48,644 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2281 ms
+2023-03-05 15:07:51,529 WARN  PageNotFound [DispatcherServlet.java:1254] No mapping for GET /favicon.ico
+2023-03-05 15:07:53,042 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-03-05 15:07:56,134 INFO  PersonDAO [PersonDAO.java:39] findPersonById 7
+2023-03-05 15:07:58,388 INFO  PersonDAO [PersonDAO.java:39] findPersonById 7
+2023-03-05 15:08:10,023 INFO  PersonDAO [PersonDAO.java:50] update Person{userId=7, name='BerewerRedact', date=2003}
+2023-03-05 15:08:10,116 INFO  PersonDAO [PersonDAO.java:34] getAllPerson
+2023-03-05 15:08:19,844 INFO  BookDAO [BookDAO.java:28] BookDAO.getAllBook
+2023-03-05 15:44:49,169 DEBUG MySpringMVCDispatcherServletInitializer [AbstractContextLoaderInitializer.java:67] No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2023-03-05 15:44:49,300 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcher'
+2023-03-05 15:44:50,703 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-05 15:44:50,710 INFO  Environment [Environment.java:184] HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.driver_class=org.postgresql.Driver, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost:5432/biblio, hibernate.bytecode.use_reflection_optimizer=false, hibernate.current_session_context_class=thread}
+2023-03-05 15:44:51,233 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-05 15:44:51,937 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-05 15:44:52,726 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.2.0.Final
+2023-03-05 15:44:54,088 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-05 15:44:55,046 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5744 ms
+2023-03-05 15:44:59,196 INFO  PersonDAO [PersonDAO.java:35] getAllPerson
+2023-03-05 15:46:58,722 DEBUG MySpringMVCDispatcherServletInitializer [AbstractContextLoaderInitializer.java:67] No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2023-03-05 15:46:58,846 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcher'
+2023-03-05 15:47:00,222 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-05 15:47:00,230 INFO  Environment [Environment.java:184] HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.driver_class=org.postgresql.Driver, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost:5432/biblio, hibernate.bytecode.use_reflection_optimizer=false, hibernate.current_session_context_class=thread}
+2023-03-05 15:47:00,751 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-05 15:47:01,448 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-05 15:47:02,268 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.2.0.Final
+2023-03-05 15:47:03,632 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-05 15:47:04,602 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5754 ms
+2023-03-05 15:47:48,665 DEBUG MySpringMVCDispatcherServletInitializer [AbstractContextLoaderInitializer.java:67] No ContextLoaderListener registered, as createRootApplicationContext() did not return an application context
+2023-03-05 15:47:48,781 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcher'
+2023-03-05 15:47:50,163 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-05 15:47:50,170 INFO  Environment [Environment.java:184] HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.driver_class=org.postgresql.Driver, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost:5432/biblio, hibernate.bytecode.use_reflection_optimizer=false, hibernate.current_session_context_class=thread}
+2023-03-05 15:47:50,687 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-05 15:47:51,388 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-05 15:47:52,187 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.2.0.Final
+2023-03-05 15:47:53,552 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-05 15:47:54,502 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5719 ms
+2023-03-05 15:48:06,451 INFO  PersonDAO [PersonDAO.java:35] getAllPerson
+2023-03-05 15:49:41,187 INFO  PersonDAO [PersonDAO.java:35] getAllPerson
